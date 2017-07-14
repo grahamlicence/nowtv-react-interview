@@ -1,0 +1,39 @@
+.messages {
+    list-style: 'none';
+    padding: 0;
+}
+
+.message {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.message__content {
+    width: calc(100% - 100px);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.message__avatar {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.message__date {
+    display: block;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.message__email {
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.5,0,1,0.5);
+}
+
+.message:hover .message__email {
+    opacity: 1;
+}

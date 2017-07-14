@@ -12,3 +12,19 @@ it('should set messages in the store', () => {
 
   expect(updatedStore.messages).toEqual(messages);
 });
+
+it('should set members in the store', () => {
+  const members = [
+    {
+      id: 'fe27b760-a915-475c-80bb-7cdf14cc6ef3',
+      firstName: 'Albert',
+      lastName: 'Rose',
+      email: 'arosec@bbb.org',
+      avatar: 'http://dummyimage.com/100x100.jpg/5fa2dd/ffffff',
+      ip: '20.79.231.223'
+    }]
+
+  const updatedStore = reducer({}, { type: 'MEMBERS_LOADING_FULFILLED', payload: members });
+
+  expect(updatedStore.members).toEqual(members);
+});

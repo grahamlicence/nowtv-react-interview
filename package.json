@@ -15,5 +15,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^2.9.1",
+    "react-addons-test-utils": "15.4.2",
+    "sinon": "^2.3.8"
   }
 }
