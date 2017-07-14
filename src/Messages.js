@@ -14,7 +14,8 @@ class Messages extends Component {
   }
 
   static propTypes = {
-    messages: PropTypes.array.isRequired
+    messages: PropTypes.array.isRequired,
+    members: PropTypes.array.isRequired
   }
 
   renderDate(date) {
