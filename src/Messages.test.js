@@ -28,7 +28,7 @@ describe('<Messages />', function() {
 
     it('correctly', function () {
       const messages = [];
-      const wrapper = render(<Messages messages={messages} />);
+      const wrapper = render(<Messages messages={messages} members={membersData} />);
       expect(wrapper.find('.messages')).toBeTrue;
     });
 
